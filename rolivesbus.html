@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http=equiv="content-type" content="text/html; charset=utf-8"/>
+<title>Rolives Bus</title>
+
+<script language="Javascript" type="text/Javascript" src="rolivesBusTravel.js"></script>
+
+<style>
+body{
+	//background-image:url("Photo0728.jpg");
+}
+ .button{
+         background:green;
+         width:100;
+         height:50;
+  }
+ .hdr{
+      
+ }
+ .tblhdr{
+        fontcolor:white;
+ }
+</style>
+</head>
+
+<body>
+<form name="busform">
+ <marquee>This is the property of Rolives Enterprise. Any illegal usage may course questioning and sometimes lead to criminal purnishment. Use with knowledge. contact:oparokeo@gmail.com/paulscamba@hotmail.com</marquee>
+<header class="hdr">
+ <table border="0" class="tblhdr" width=1370>
+  <tr>
+   <td><div align="center"><a href=""><img src="roliveslogo.JPG" alt="20img" width=170 height=100/></a></div></td>
+   <td width=80><div align="center"><a href="roliveshomepage.html"><b><u>HOME |</u></b></a></div></td>
+   <td><div align="center"><a href="rolivesbus.html"><b><u>BUS |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>CAB |</u></b></a></div></td>
+   <td><div align="center"><a href="rolivestrain.html"><b><u>RAILWAY |</u></b></a></div></td>
+   <td><div align="center"><a href="rolivesairport.html"><b><u>AIR-PLANE |</u></b></a></div></td>
+   <td><div align="center"><a href="roliveswaterfright.html"><b><u>WATER FREIGHT |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>BODA-BODA |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>Databse |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>Hotel |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>NEWS |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>About us |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>Contact us |</u></b></a></div></td>
+   <td><div align="center"><a href=""><b><u>Sign-In |</u></b></a></td>
+   <td><div align="center"><a href=""><b><u>Sign-Up</u></b></a></div></td>
+  </tr>
+ </table>
+ <div align="right">
+  <label><b>Search:</b> <input type="text" id="txtsrch"/><input type="button" id="btnsrch" value=" " onClick=""/></label>
+  <div align="left"><audio src="Ajo-home-town.mp3" controls></audio></div>
+ </div>
+<hr/>
+</header>
+ <div align="left"><h3><b><u>Passenger Reciept Data</u><b></h3></div>
+ <div align="center">
+  <table border="0" width=1300>
+   <tr>
+    <td colspan="6">
+     <table border="0">
+      <tr>                    
+       <td colspan="2">
+        <div>
+           <table border="0">
+            <tr>
+             <td><b>TicketNo :/b></td>
+             <td><input type="text" id="tcktno"/></td>
+            </tr>
+            <tr>
+             <td><b>Passenger name:</b></td>
+             <td><input type="text" id="txtpsngrname" width=200/></td>
+            <tr>
+            <tr>
+             <td><b>Passport No.:</b></td>
+             <td><input type="text" id="txtpssport" width=200/></td>
+            </tr>
+            <tr>
+             <td><b>Nationality:</b></td>
+             <td><input type="text" id="txtnationality" width=200/></td>
+            </tr>
+            <tr>
+             <td>Select gender</td>
+             <td>
+              <div>
+                <select id="gndr">
+                 <option>Male</option>
+                 <option>Female</option>
+                 <option>Child</option>
+                 <option>Patient</option>
+                </select>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td><b>Travel purpose:</b></td>
+             <td>             
+              <div align="center">
+               <input type="text" width=300 id="visitreason" multyline=true/>
+              </div>
+             </td></td>
+            </tr>
+           </table>
+         <hr/>
+        </div>
+       </td>
+       <td colspan="2" rowspan="2" width="700" align="center">
+       <div align="center">
+        <div align="center">
+         <label style="color:black;"><b>Video/Audio file-path :</b></label><input type="text" id="txtomrokvid" style="color:maroon; font-size:xlarge; font-weight:bold;"/>
+         <input type="button" value="Play File" onClick="omrokVideo();" style="background-color:black; color:white; font-weight:bold; font-size:medium"/><br/>
+        </div>
+         <iframe id="omrokvid" src="" width="650" height="300" style=""></iframe>
+        </div>
+       </td>
+       <td colspan="1" width="250" align="center">
+        <div align="center"><img src="omrokadvt.JPG" alt="20image" width=240 height=250/></div>
+       </td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+   <tr>
+    <td>
+     <div align="left">
+      <table border="0">
+       <tr><td colspan="5" align="right"></td></tr>
+       <tr>
+        <td colspan="2" align="right"><b>Seat No:</b></td>
+        <td><input type="text" id="rolivestxtseatno"/></td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Source:</b></td>
+        <td>
+         <div>
+          <select id="rolivesslctSource">
+           <option value="">select source</option>
+           <option value="">Kampala</option>
+           <option value="">Tororo</option>
+           <option value="">Mbale</option>
+           <option value="">Kumi</option>
+           <option value="">Soroti</option>
+           <option value="">Lira</option>
+          </select>
+         </div>
+        </td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Via route:</b></td>
+        <td>
+         <div>
+          <select id="rolivesslctbypass">
+           <option value="">- -</option>
+           <option value="">Kampala</option>
+           <option value="">Tororo</option>
+           <option value="">Mbale</option>
+           <option value="">Kumi</option>
+           <option value="">Soroti</option>
+           <option value="">Lira</option>
+          </select>
+         </div></td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Destination:</b></td>
+        <td>
+         <div>
+          <select id="rolivesslctdstn">
+           <option value="">- -</option>
+           <option value="">Kampala</option>
+           <option value="">Tororo</option>
+           <option value="">Mbale</option>
+           <option value="">Kumi</option>
+           <option value="">Soroti</option>
+           <option value="">Lira</option>
+          </select>
+         </div></td>
+       </tr>
+       <tr>
+        <td colspan="3" align="center">
+         <label>One way       :</label>
+         <input type="radio" name="radway" id="rolivesoneway" value="oneroute"/>
+        </td>
+       </tr>
+       <tr>
+        <td colspan="3" align="center">
+         <label>Two way       :</label>
+         <input type="radio" name="radway" id="rolivestwoway" value="toandfrow"/>
+        </td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Car number:</b></td>
+        <td><input type="text" id="rolivestxtcarno"/></td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Departure date:</b></td>
+        <td><input type="date" id="rolivestxtdprtdate"/></td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Departure time:</b></td>
+        <td><input type="time" id="rolivestxtdprttime"/></td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Arrival date:</b></td>
+        <td><input type="date" id="rolivestxtarrvldate"/></td>
+       </tr>
+       <tr>
+        <td colspan="2" align="right"><b>Arrival time :</b></td>
+        <td><input type="time" id="rolivestxtarrvtime"/></td>
+       </tr>
+      </table>
+     </div>
+    </td>
+    <td>
+       <div align="left">
+        <table border="0">
+         <tr>
+          <td colspan="2" align="right"><b>Cost per seat:</b></td>
+          <td><input type="text" id="rolivesseatcst"/></td>
+         </tr>
+         <tr>
+          <td colspan="2" align="right"><b>Number of seats :</b></td>
+          <td><input type="text" id="rolivesseatcnt"/></td>
+         </tr>
+         <tr><td colspan="3"><hr/></td></tr>
+         <tr>
+          <td colspan="2" align="right"><b>Langage(KG):</b></td>
+          <td><input type="text" id="rolivestxtlagwgt"/></td>
+         </tr>
+         <tr>
+          <td colspan="2" align="right"><b>Cost per weight(KG):</b></td>
+          <td><input type="text" id="rolivescstperwgt"/></td>
+         </tr>
+         <tr><td colspan="3"><hr/></td></tr>
+         <tr>
+          <td colspan="2" align="right"><b>Number of Children:</b></td>
+          <td><input type="text" id="rolivestxtchldcnt"/></td>
+         </tr>
+         <tr>
+          <td colspan="2" align="right"><b>Cost per child (<10yrs):</b></td>
+          <td><input type="text" id="rolivescstperchld"/></td>
+         </tr>
+
+         <tr><td colspan="3"><hr/></td></tr>
+
+         <tr>
+          <td colspan="2" align="right"><b>Number of Crippled passenger:</b></td>
+          <td><input type="text" id="rolivestxtlamepsngr"/></td>
+         </tr>
+         <tr>
+          <td colspan="2" align="right"><b>Cost per Crippled :</b></td>
+          <td><input type="text" id="rolivescrippledchrg"/></td>
+         </tr>
+
+         <tr><td colspan="3"><hr/></td></tr>
+
+         <tr>
+          <td colspan="2" align="right"><b>Number of Sick Passengers:</b></td>
+          <td><input type="text" id="rolivessickpsngrno"/></td>
+         </tr>
+        <tr>
+         <td colspan="2" align="right"><div><b>Cost per Sick Passenger:</b></div></td>
+         <td><div><input type="text" id="rolivescstpersick"/></div></td>
+        </tr>
+         <tr>
+          <td colspan="2" align="right"></td>
+          <td></td>
+         </tr>
+        </table>
+       </div>
+    </td>
+    <td width=300>
+     <div align="left">      
+       <table border="0">
+        <tr>
+         <td align="right"><b>Occupation :</b></td>
+         <td width="200">
+          <select id="rolivespsngroccptn">
+           <option><b>- -</b></option>
+           <option><b>Doctor</b></option>
+           <option><b>Engineer</b></option>
+           <option><b>Civil service</b></option>
+           <option><b>carpenter</b></option>
+           <option><b>Mechanic</b></option>
+           <option><b>Plumber</b></option>
+           <option><b>Business</b></option>
+           <option><b>Computer science</b></option>
+           <option><b>Teacher</b></option>
+           <option><b>Sports-man</b></option>
+          <selected>
+         </td>
+        </tr>
+        <tr>
+         <td align="right"><b>Marital status :</b></td>
+         <td width="200">
+          <select id="rolivespsngrmarriage">
+           <option><b>- -</b></option>
+           <option><b>Single</b></option>
+           <option><b>Married</b></option>
+           <option><b>Divorced</b></option>
+          </select>
+         </td>
+        </tr>
+        <tr>
+         <td align="right"><b>Home address-1 :</b></td>
+         <td width="200"><input type="text" id="roliveshmaddrss"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Address-2</b></td>
+         <td width="200"><input type="text" id="rolivespsngraddrss"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Telphone :</b></td>
+         <td width="200"><input type="phone" id="rolivespsngrtel"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Mobile :</b></td>
+         <td width="200"><input type="phone" id="rolivespsngrmob"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>E-mail :</b></td>
+         <td width="200"><input type="email" id="rolivespsngrmail"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Driving licence number :</b></td>
+         <td width="200"><input type="text" id="rolivespsngrdl"/></td>
+        </tr>
+        <tr>
+         <td colspan="3" align="right"><div><b>Travel Discount:</b></div></td>
+         <td><div><input type="text" id="discountallowed"/></div></td>
+        </tr>
+        <tr>
+         <td colspan="3" align="right"></td>
+         <td></td>
+        </tr>
+         <tr>
+          <td colspan="4" align="right"><b><hr/></b></td>
+         </tr>
+         <tr>
+          <td colspan="3" align="right"><b>Total cost of journey:</b></td>
+          <td><input type="text"/></td>
+         </tr>
+        </table>
+     </div>
+    </td>
+   </tr>
+   <tr>
+    <td colspan="9" align="center"></td>
+   </tr>   
+  </table>
+<hr/>
+   <input type="button" id="btnDisplay" value="DISPLAY DETAILS" onClick="calcTotBusfare();"/>
+   <hr/>
+ </div>
+  <div align="left">
+   <h3><b><u>Display passenger booking entries</u></b></h3>
+  </div>
+  <div align="center">
+   <table border="0" width=1200>
+    <tr><td colspan="2" align="center" style="background-color:green; font-weight:bold; color:white;"><b><u>PASSENGER SECURITY ID</u></b></td></tr>
+    <tr>
+     <td align="left" width="200" height="20"><b>PASSENGER NAME :</b></td>
+     <td width="200">
+      <div id="rolivestraveldivname" align="right" style="color:red; font-weight:bold;"/>
+     </td>
+     <td rowspan="8" width=300>
+      <div>
+       <table border="0">
+        <tr><td colspan="2" align="center" style="background-color:green; font-weight:bold; color:white;"><b><u>BUS ROUTE</u></b></td></tr>
+        <tr>
+         <td align="right"><b>SEAT NUMBER:</b></td>
+         <td width="200"><div id="rolivesdivseatno" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>SOURCE PORT:</b></td>
+         <td width="200"><div id="rolivesdivsource" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>VIA-ROUTE:</b></td>
+         <td width="200"><div id="rolivesdivbypass" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>DESTINATION:</b></td>
+         <td width="200"><div id="rolivesdivdestn" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr><td colspan="2"><hr/></td></tr>
+        <tr>
+         <td align="right"><b>CAR NUMBER:</b></td>
+         <td width="200"><div id="rolivesdivcarno" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>DEPARTURE DATE :</b></td>
+         <td width="200"><div id="rolivesdivdeparturedate" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>DEPARTURE TIME :</b></td>
+         <td width="200"><div id="rolivesdivdeprttime" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>ARRIVAL DATE :</b></td>
+         <td width="200"><div id="rolivesdivarrvdate" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>ARRIVAL TIME :</b></td>
+         <td width="200"><div id="rolivesdivarrvtime" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr><td colspan="2"><hr/></td></tr>
+        <tr>
+         <td align="center" colspan="2" style="background-color:green; color:white; font-weight:bold;"><b><U>PASSENGER ADRRESS</U></b></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Occupation :</b></td>
+         <td width="200"><div id="rolivesdivoccptn" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Marital status :</b></td>
+         <td width="200" style="color:red; font-weight:bold;"><div id="rolivespsngrmarriage"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Home address-1 :</b></td>
+         <td width="200"><div id="rolivespsngraddrss" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Address-2</b></td>
+         <td width="200"><div id="rolivespsngraddrss2" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Telphone :</b></td>
+         <td width="200"><div id="rolivespsngrtel" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Mobile :</b></td>
+         <td width="200"><div id="rolivespsngrmbl" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>E-mail :</b></td>
+         <td width="200"><div id="rolivespsngremail" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b>Driving licence number :</b></td>
+         <td width="200"><div id="rolivespsngrdrvlnc" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right" height="50"><b></b></td>
+         <td width="200"></td>
+        </tr>
+       </table>
+      </div>
+     </td>
+     <td></td>
+     <td rowspan="8">
+      <div align="center">
+       <table border="0">
+        <tr><td colspan="2" align="center" style="background-color:green; font-weight:bold; color:white;"><b><u>BUS CHARGES</u></b></td></tr>
+        <tr>
+         <td align="right"><div><b>COST PER SEAT :</b></div></td>
+         <td width="200"><div id="divseatcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>NUMBER OF SEATS :</b></div></td>
+         <td width="200"><div id="divseatcount" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>TOTAL SEATS CHARGE :</b></div></td>
+         <td width="200"><div id="divseatchrg" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr><td colspan="3"><hr/></td></tr>
+        <tr>
+         <td align="right"><div><b>LAGAGE WEIGHT[KG] :</b></div></td>
+         <td width="200"><div id="rolivesdivlagkg" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>LAGAGE COST[Kg] :</b></div></td>
+         <td width="200"><div id="rolivesdivlagkgcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>TOTAL LAGAGE COST :</b></div></td>
+         <td width="200"><div id="rolivesdivlagtotcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr><td colspan="3"><hr/></td></tr>
+        <tr>
+         <td align="right"><div><b>No.OF CHILDREN:</b></div></td>
+         <td width="200"><div id="rolivesdivchldnum" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>COST PER CHILD[<9]:</b></div></td>
+         <td width="200"><div id="rolivesdivchldcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>TOTAL CHILD FARE[<9]:</b></div></td>
+         <td width="200"><div id="rolivesdivchldtotcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+
+        <tr><td colspan="3"><hr/></td></tr>
+
+        <tr>
+         <td align="right"><div><b>No. OF CRIPPLED :</b></div></td>
+         <td width="200"><div id="rolivesdivcrippledno" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>COST per CRIPPLED :</b></div></td>
+         <td width="200"><div id="rolivesdivcrippledcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>Total CRIPPLED Charge :</b></div></td>
+         <td width="200"><div id="rolivesdivtotcrippledcst" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+
+        <tr><td colspan="3"><hr/></td></tr>
+
+        <tr>
+         <td align="right"><div><b>No. OF SICK passenger:</b></div></td>
+         <td width="200"><div id="rolivesdivsickno" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>COST per SICK passenger:</b></div></td>
+         <td width="200"><div id="rolivesdivsickchrg" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><div><b>Total cost of Sick passenger:</b></div></td>
+         <td width="200"><div id="rolivesdivtotsick" align="right" style="color:red; font-weight:bold;"/></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="right"><b></b></td>
+         <td width="200"></td>
+        </tr>
+        <tr>
+         <td align="center" colspan="2">
+          <div align=center">
+           <img src="omrokpic.jpg" alt="20image" width="200" height="300"/>
+          </div>
+         </td>
+        </tr>
+       </table>
+      </div>
+     </td>
+    </tr>
+    <tr>
+     <td align="left" width="200" height="20"><b>PASSENGER SEX :</b></td>
+     <td width="200"><div id="rolivesdivpsngrsex" align="right" style="color:red; font-weight:bold;"/></td>
+     <td></td>     
+    </tr>
+    <tr>
+     <td align="left" width="200" height="20"><b>PASSPORT NUMBER:</b></td>
+     <td width="200"><div id="rolivesdivpassport" align="right" style="color:red; font-weight:bold;"/></td>
+     <td></td>     
+    </tr>
+    <tr>
+     <td align="left" width="200" height="20"><b>NATIONALITY:</b></td>
+     <td width="200"><div id="rolivesdivnationality" align="right" style="color:red; font-weight:bold;"/></td>
+     <td></td>
+    </tr> 
+    <tr>
+     <td align="left" width="200" height="20"><b>TRAVEL PURPOSE :</b></td>
+     <td width="200"><div id="rolivesdivtrvlrsn" align="right" style="color:red; font-weight:bold;"/></td>
+     <td></td>
+    </tr> 
+    <tr>
+     <td rowspan="3" colspan="2">
+      <div align="center">
+       <img src="omrokadvrt.JPG" alt="20image" width="400" height="700"/>
+      </div>
+     </td>
+     <td rowspan="3">2</td>
+    </tr>
+    <tr>
+     <td>8</td>
+    </tr>
+   </table>
+   <div align="center">
+    <table border="0">
+     <tr>
+      <td></td>
+      <td width="1200" height="40" style="background-color:darkgreen; color:white;">
+       <label style="color:white; font-weight:bold; font-size:xx-large;">Total Bus Fare :</label>
+       <div id="totalbusfare" align="right" style="color:white; font-size:xx-large; font-weight:bold;"/></td>
+     </tr>
+    </table>
+   </div>
+<button id="btnprint" onClick="btnPrint();">Print Data</button>
+  </div> 
+</div>
+</form>
+<footer align="center"><hr/>
+<div align="center"><br/>
+ <label><b>Search:</b> <input type="text" id="txtsrch"/><input type="button" id="btnsrch" value=" " onClick=""/></label>
+</div>
+<div align="center">
+ <a href="">Developer</a>
+ <a href="">Contact us</a>
+ <a href="">About us</a>
+</div>
+</footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

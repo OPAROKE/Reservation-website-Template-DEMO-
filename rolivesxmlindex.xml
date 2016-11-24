@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"  standalone="yes"?>
+<!DOCTYPE passengerdatail [
+ <!ELEMENT passengerdatail (firstname,midname,lastname)>
+ <!ELEMENT passportnumber (#PCDATA)>
+ <!ELEMENT nationality (#PCDATA)> 
+]>
+<passengerdatail>
+ <firstname>Akurut</firstname>
+ <midname>Tino</midname>
+ <lastname>Teresa</lastname>
+</passengerdatail>

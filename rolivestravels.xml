@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<omrok>
+ <rolives>
+  <passengerdetails>
+   <psngrname>
+    <firstname></firstname>
+    <middlename></middlename>
+    <lastname></lastname>
+   </psngrname>
+   <psngrtraveldetail>
+    <sourceport></sourceport>
+    <viarouteport></viarouteport>
+    <destinationport></destinationport>
+   </psngrtraveldetail>
+  </passengerdetails>
+ </rolives>
+</omrok>
